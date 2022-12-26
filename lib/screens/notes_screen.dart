@@ -16,7 +16,7 @@ class _NotesScreenState extends State<NotesScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color.fromARGB(255, 245, 115, 115),
+        backgroundColor: Color.fromARGB(255, 42, 114, 248),
         appBar: AppBar(
           title: const Text('NOTAS Y RECORDATORIOS'),
           centerTitle: true,
@@ -84,7 +84,7 @@ class _NotesScreenState extends State<NotesScreen> {
                 );
               }
               return const Center(
-                child: Text('No tienes notas todavia'),
+                child: Text('Ahun tienes notas todavia'),
               );
             }
             return const SizedBox.shrink();
