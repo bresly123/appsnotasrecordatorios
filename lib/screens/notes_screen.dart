@@ -55,7 +55,7 @@ class _NotesScreenState extends State<NotesScreen> {
                           context: context,
                           builder: (context) {
                             return AlertDialog(
-                              title: const Text('Letting Go?'),
+                              title: const Text('Deseas Eliminar?'),
                               actions: [
                                 ElevatedButton(
                                   style: ButtonStyle(
@@ -69,11 +69,11 @@ class _NotesScreenState extends State<NotesScreen> {
                                     Navigator.pop(context);
                                     setState(() {});
                                   },
-                                  child: const Text('Yes'),
+                                  child: const Text('SI'),
                                 ),
                                 ElevatedButton(
                                   onPressed: () => Navigator.pop(context),
-                                  child: const Text('No'),
+                                  child: const Text('NO'),
                                 ),
                               ],
                             );
@@ -84,7 +84,7 @@ class _NotesScreenState extends State<NotesScreen> {
                 );
               }
               return const Center(
-                child: Text('No notes yet'),
+                child: Text('No tienes notas todavia'),
               );
             }
             return const SizedBox.shrink();
